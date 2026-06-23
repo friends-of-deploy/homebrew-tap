@@ -7,16 +7,16 @@ cask "vercelbar" do
 
   url "https://github.com/RadnoK/vercelbar/releases/download/v#{version}/VercelBar-#{version}.dmg"
   name "VercelBar"
-  desc "Native macOS menu bar app for monitoring Vercel deployments"
+  desc "Menu bar app for monitoring Vercel deployments"
   homepage "https://github.com/RadnoK/vercelbar"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "VercelBar.app"
 
   zap trash: [
-    "~/Library/Preferences/io.eightlines.vercelbar.VercelBar.plist",
     "~/Library/Application Support/io.eightlines.vercelbar.VercelBar",
     "~/Library/Caches/io.eightlines.vercelbar.VercelBar",
+    "~/Library/Preferences/io.eightlines.vercelbar.VercelBar.plist",
   ]
 end
