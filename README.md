@@ -1,31 +1,32 @@
-# RadnoK Homebrew Tap
+# friends-of-deploy Homebrew Tap
 
-Homebrew casks for [RadnoK](https://github.com/RadnoK)'s macOS apps.
+Homebrew casks for [friends-of-deploy](https://github.com/friends-of-deploy)'s macOS apps.
 
 ## Install
 
 ```bash
-brew install --cask RadnoK/tap/vercelbar
+brew install --cask friends-of-deploy/tap/deploybar
 ```
 
-`brew` resolves `RadnoK/tap` to this repository (`RadnoK/homebrew-tap`) and
-taps it automatically, so a separate `brew tap` step is not required.
+`brew` resolves `friends-of-deploy/tap` to this repository
+(`friends-of-deploy/homebrew-tap`) and taps it automatically, so a separate
+`brew tap` step is not required.
 
 ## Available casks
 
 | Cask | Description |
 |------|-------------|
-| [`vercelbar`](Casks/vercelbar.rb) | Native macOS menu bar app for monitoring Vercel deployments |
+| [`deploybar`](Casks/deploybar.rb) | Native macOS menu bar app for monitoring Vercel deployments |
 
 ## Updating
 
 ```bash
 brew update
-brew upgrade --cask vercelbar
+brew upgrade --cask deploybar
 ```
 
 ## How releases work
 
-Cask versions track the [VercelBar releases](https://github.com/RadnoK/vercelbar/releases).
+Cask versions track the [DeployBar releases](https://github.com/friends-of-deploy/deploybar/releases).
 Each tagged release builds, signs, and notarizes a `.dmg`, then bumps the
-`version` and `sha256` in `Casks/vercelbar.rb` here.
+`version` and `sha256` in `Casks/deploybar.rb` here.
