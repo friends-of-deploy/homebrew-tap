@@ -2,8 +2,8 @@
 # "Bump Homebrew cask" step in friends-of-deploy/deploybar's release workflow.
 # To update by hand, copy the values printed in that release job's summary.
 cask "deploybar" do
-  version "1.2.1"
-  sha256 "9af5513629ed8d762ece47a3934c9601cdd6075c8613e8ac3797dec6bfea6020"
+  version "1.2.2"
+  sha256 "38002d8ca8434d7ec6d709619467a2bb66c0b1da55b42b22a13563cf170286aa"
 
   url "https://github.com/friends-of-deploy/deploybar/releases/download/v#{version}/DeployBar-#{version}.dmg"
   name "DeployBar"
